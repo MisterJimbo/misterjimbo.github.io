@@ -1,0 +1,89 @@
+.block{
+    width: 300px;
+    height:300px;
+    border:1px black solid;
+}
+.block p, .block h1{
+    padding:15px;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.block:hover p, .block:hover h1{
+    opacity: 1;
+}
+
+.block:hover p{
+    transition-delay:0.5s;
+}
+
+.cross{
+    width:200px;
+    height:200px;
+    border:1px black solid;
+    position:relative;
+}
+
+.cross .line1,.cross .line2{
+    position:absolute;
+    width:100px;
+    height:10px;
+    border:1px solid black;
+    /* margin-top:-5px;
+    margin-left:-50px; */
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    transition-duration: 1s;
+    
+}
+.cross:hover .line1{
+   
+    transform:translate(-50%,-50%) rotate(45deg) ; 
+   
+    /* transform:translate(-30%,-50%); */
+    transition-delay:1s;
+
+
+}
+.cross:hover .line2{
+    /* transform:rotate(-45deg); */
+    transform:translate(-50%,-50%) rotate(-45deg); 
+    transition-delay:1s;
+}
+.cross .line3{
+    position:absolute;
+    width:100px;
+    height:10px;
+    border:1px solid black;
+    /* margin-top:-5px;
+    margin-left:-50px; */
+    top:25%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    transition-duration: 0.5s;
+    
+}
+.cross .line4{
+    position:absolute;
+    width:100px;
+    height:10px;
+    border:1px solid black;
+    /* margin-top:-5px;
+    margin-left:-50px; */
+    top:75%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    transition-duration: 0.5s;
+    
+}
+.cross:hover .line3{
+    /* transform:rotate(-45deg); */
+    transform:translate(-50%,365%) ; 
+}
+.cross:hover .line4{
+    /* transform:rotate(-45deg); */
+    transform:translate(-50%,-465% ) ;
+     
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            border: 1px black solid;
+            vertical-align:top;
+        }
+
+        .card {
+            height: 400px;
+            width: 600px;
+        }
+
+        .rects {
+            height: 200px;
+            width: 200px;
+            display:inline-block;
+        }
+
+        .rect {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+        }
+
+        .rect.C {
+            background-color: rgb(120, 223, 172);
+        }
+
+        .rect.B {
+            background-color: aqua;
+        }
+
+        .rect.A {
+            background-color: red;
+        }
+        .rects.static .rect.B{
+            position:static;
+            margin: 15px;
+        }
+        
+        .rects.relative .rect.B{
+            position:relative;
+            top:20px;
+            right: 10px ;
+        }
+        
+        .rects.absolute .rect.B{
+            position:absolute;
+            top:30px;
+            right: 30px ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="rects static">
+            <h4 >static是預設的 只受到內外距影響</h4>
+            <div class="rect A "></div>
+            <div class="rect B "></div>
+            <div class="rect C "></div>
+        </div>
+        <div class="rects relative">
+            <h4>relative是相對定位 受到偏移影響</h4>
+            <div class="rect A"></div>
+            <div class="rect B"></div>
+            <div class="rect C"></div>
+        </div>
+        <div class="rects absolute">
+            <h4>absolute是絕對定位</h4>
+            <div class="rect A "></div>
+            <div class="rect B "></div>
+            <div class="rect C "></div>
+        </div>
+        <div class="rects">
+            <div class="rect A "></div>
+            <div class="rect B "></div>
+            <div class="rect C "></div>
+        </div>
+    </div>
+</body>
+
+</html>

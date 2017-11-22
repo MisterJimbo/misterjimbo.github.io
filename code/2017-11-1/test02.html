@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AFB</title>
+    <style>
+        .center{
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .A{
+            /* position: relative; */
+            z-index: 10;
+            height: 80px;
+            width: 81px;
+            margin-top: 230px;
+            margin-left: 7%;
+            background: rgb(106, 111, 236);
+            border: 2px solid rgb(0, 38, 255) ;    
+        }
+        .B{
+            z-index: -1;
+            position: relative;
+            height: 300px;
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+            background: rgb(243, 235, 119);
+            border: 5px solid rgb(43, 214, 226);    
+        }
+        .C{
+            z-index: -1;
+            /* box-sizing: border-box; */
+            position: absolute;
+            height: 50px;
+            width: 100%;
+            top: 300px;
+            left: -5px;          
+            background: rgb(212, 98, 142);
+            border: 5px solid rgb(9, 195, 241);  
+        }.D{
+           position: relative;
+           z-index: 10;
+           height: 40px;
+           width: 93px;
+           margin-top: 27%;
+           left: -5px;
+           /* margin-left: 100px; */
+           background: rgb(106, 111, 236);
+           border: 2px solid rgb(0, 38, 255) ;
+           float: right;    
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="center"> -->
+        <div class="B">
+            封面照片
+            <div class="D" >
+                    按鈕
+            </div>
+            <div class="D" >
+                    按鈕
+                </div>
+            <div class="A">
+                大頭
+            </div>
+            <div class="C">
+                    <div class="D" >
+                        按鈕
+                    </div>
+            </div>
+        </div>
+    <!-- </div> -->
+</body>
+</html>

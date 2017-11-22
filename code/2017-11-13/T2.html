@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/css/T2.css"> -->
+    <style>
+        * {
+            /* border: 1px black solid; */
+            box-sizing: border-box;
+            
+        }
+        h1{
+            line-height: 0px;
+            margin:0px;
+        }
+
+        .f {
+            display:flex;
+             width:80%;
+            margin:auto;
+        }
+
+        .p {
+            flex: 1;
+            position: relative;
+            width: 300px;
+            height: 200px;
+            transition: 2s;
+        }
+
+        .p1 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/01.jpg);
+            background-size: cover;
+            /* z-index: -1; */
+
+        }
+
+        .p2 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/02.jpeg);
+            background-size: cover;
+
+        }
+
+        .p3 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/03.jpg);
+            background-size: cover;
+
+        }
+        .p{
+            margin:5px;
+            transition: 2s;
+        }
+        .pp{
+            transition: 0.5s;
+        }
+      
+        .p:hover .pp{
+            filter: brightness(50%);
+
+        }
+        .h{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            color: white;
+            text-align: center;
+            opacity: 0;
+            transition: 0.5s;
+
+            /* z-index: 1; */
+        }
+        .p:hover .h{
+            opacity: 1;
+            
+        }
+        container{
+            width:80%;
+            margin:auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="f">
+            <div class="p">
+                <a href="">
+                    <div class="p1 pp">
+                    </div>
+                </a>
+                <h1 class="h">東京</h1>
+            </div>
+            <div class="p">
+                <a href="">
+                    <div class="p2 pp">
+                    </div>
+                    <h1 class="h">倫敦</h1>
+                </a>
+                
+            </div>
+            <div class="p">
+                <a href="">
+                    <div class="p3 pp">
+                    </div>
+                    <h1 class="h">首爾</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

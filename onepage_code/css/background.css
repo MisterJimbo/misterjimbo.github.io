@@ -1,0 +1,53 @@
+.background_A {
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+    
+    border: 1px solid black;
+    background-image: url(/img/A.jpg);
+}
+
+.background_B {
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+
+    border: 1px solid black;
+    background-image: url(/img/B.jpg);
+}
+
+.background_C {
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+    
+    border: 1px solid black;
+    background-image: url(/img/C.jpg);
+}
+
+.background_D {
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+    
+    border: 1px solid black;
+    background-image: url(/img/D.jpg);
+}
+
+.background_E {
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+
+    border: 1px solid black;
+    background-image: url(/img/E.jpg);
+}
+
+.background_F {
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+
+    border: 1px solid black;
+    background-image: url(/img/F.jpg);
+}

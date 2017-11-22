@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            /* border: 1px black solid; */
+            box-sizing: border-box;
+
+        }
+
+
+        .f {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            max-width: 1000px;
+        }
+
+        .h {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            opacity: 0;
+            transition: 0.5s;
+
+            /* z-index: 1; */
+        }
+
+        .block {
+            flex: 1;
+            position: relative;     
+            width: 300px;
+            height: 200px;
+            transition: 2s;
+            margin: 5px;
+            transition: 2s;
+        }
+
+        .block_7 {
+            flex: 6.7;
+            position: relative;
+            width: 300px;
+            height: 200px;
+            transition: 2s;
+            margin: 5px;
+            transition: 2s;
+        }
+
+        .block_3 {
+            flex: 3.255;
+            position: relative;
+            width: 300px;
+            height: 200px;
+            transition: 2s;
+            margin: 5px;
+            transition: 2s;
+        }
+
+
+
+        .dark {
+            transition: 0.5s;
+        }
+
+        .block:hover .dark {
+            filter: brightness(50%);
+
+        }
+
+        .block:hover .h {
+            opacity: 1;
+
+        }
+
+        .block_7:hover .dark {
+            filter: brightness(50%);
+
+        }
+
+        .block_7:hover .h {
+            opacity: 1;
+
+        }
+        .block_3:hover .dark {
+            filter: brightness(50%);
+
+        }
+
+        .block_3:hover .h {
+            opacity: 1;
+
+        }
+
+
+
+
+
+        container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .p1 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/01.jpg);
+            background-size: cover;
+            /* z-index: -1; */
+        }
+
+        .p2 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/02.jpeg);
+            background-size: cover;
+
+        }
+
+        .p3 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/03.jpg);
+            background-size: cover;
+
+        }
+
+        .p4 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/6.png);
+            background-size: cover;
+        }
+
+        .p5 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/7.png);
+            background-size: cover;
+        }
+
+        .p6 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/8.png);
+            background-size: cover;
+        }
+
+        .p7 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/9.png);
+            background-size: cover;
+        }
+
+        .p8 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/10.png);
+            background-size: cover;
+        }
+
+        .p9 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/11.png);
+            background-size: cover;
+        }
+
+        .p10 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/12.png);
+            background-size: cover;
+        }
+
+        .p11 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/13.png);
+            background-size: cover;
+        }
+
+        .p12 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/14.png);
+            background-size: cover;
+        }
+
+        .p13 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/15.png);
+            background-size: cover;
+        }
+
+        .p14 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/17.png);
+            background-size: cover;
+        }
+
+        .p15 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/18.png);
+            background-size: cover;
+        }
+
+        .p16 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/19.png);
+            background-size: cover;
+        }
+
+        .p17 {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(/img/20.png);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <h1>週末好去處</h1> -->
+    <div class="container">
+
+        <div class="f">
+            <div class="block">
+                <a href="">
+                    <div class="p1 dark">
+                    </div>
+                </a>
+                <h1 class="h">首爾</h1>
+            </div>
+            <div class="block">
+                <a href="">
+                    <div class="p2 dark">
+                    </div>
+                    <h1 class="h">大阪</h1>
+                </a>
+
+            </div>
+            <div class="block">
+                <a href="">
+                    <div class="p3 dark">
+                    </div>
+                    <h1 class="h">京都</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="f">
+            <div class="block_7">
+                <a href="">
+                    <div class="p4 dark">
+                    </div>
+                </a>
+                <h1 class="h">巴黎</h1>
+            </div>
+            <div class="block_3">
+                <a href="">
+                    <div class="p5 dark">
+                    </div>
+                    <h1 class="h">cathy的家</h1>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="f">
+            <div class="block">
+                <a href="">
+                    <div class="p6 dark">
+                    </div>
+                </a>
+                <h1 class="h">倫敦</h1>
+            </div>
+            <div class="block">
+                <a href="">
+                    <div class="p7 dark">
+                    </div>
+                    <h1 class="h">米蘭</h1>
+                </a>
+
+            </div>
+            <div class="block">
+                <a href="">
+                    <div class="p8 dark">
+                    </div>
+                    <h4 class="h">去威尼斯休閒放鬆</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="f">
+            <div class="block_3">
+                <a href="">
+                    <div class="p9 dark">
+                    </div>
+                </a>
+                <h1 class="h">Danal的家</h1>
+            </div>
+            <div class="block_7">
+                <a href="">
+                    <div class="p10 dark">
+                    </div>
+                    <h1 class="h">慕尼黑</h1>
+                </a>
+
+            </div>
+        
+        </div>
+
+        <div class="f">
+            <div class="block">
+                <a href="">
+                    <div class="p11 dark">
+                    </div>
+                </a>
+                <h1 class="h">紐約</h1>
+            </div>
+            <div class="block">
+                <a href="">
+                    <div class="p12 dark">
+                    </div>
+                    <h1 class="h">柏林</h1>
+                </a>
+        
+            </div>
+            <div class="block">
+                <a href="">
+                    <div class="p13 dark">
+                    </div>
+                    <h4 class="h">去托斯卡納觀光遊覽</h1>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

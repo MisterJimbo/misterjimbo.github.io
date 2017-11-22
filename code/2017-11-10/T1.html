@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p  id="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, et magni quis, quia vitae expedita accusamus eligendi
+        quibusdam, non reiciendis autem possimus officiis quos illum facere labore nostrum necessitatibus. Deleniti?</p>
+    <button onclick="add()">add</button>
+    <button onclick="remove()">remove</button>
+    <button onclick="toggle()">toggle</button>
+
+    <script>
+
+        function add() {
+            var a = document.querySelector("#text");
+            a.classList.add('red');
+            console.log(a.classList);
+        }
+        function remove() {
+            var a = document.querySelector("#text");
+            a.classList.remove('red');
+            console.log(a.classList);
+        }
+        function toggle() {
+            var a = document.querySelector("#text");
+            a.classList.toggle('red');
+            console.log(a.classList);
+        }
+   
+    </script>
+</body>
+
+</html>

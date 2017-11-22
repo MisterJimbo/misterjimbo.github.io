@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/unslider.css">
+    <link rel="stylesheet" href="/css/unslider-dots.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/background.css">
+    <link rel="stylesheet" href="/css/slider.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            /* border: 1px black solid; */
+        }
+        body {
+            /* margin: 0px; */
+            height: 2000px;
+            background-color: rgb(177, 176, 185);
+        }
+        .container {
+
+            max-width: 60%;
+            margin: auto;
+            padding-top: 120px;
+
+        }
+        .back_top {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: none;
+            color: whitesmoke;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back_top">Go Back to Top</div>
+
+    <div class="background_A">
+
+        <div class="navbar_out">
+            <div class="navbar">
+                <div class="logo">
+                    <h1>Logo</h1>
+                </div>
+
+                <div class="option">
+                    <a href="">
+                        <h4>各式套餐</h4>
+                        <div class="option_block"></div>
+                    </a>
+                </div>
+                <div class="option">
+                    <a href="">
+                        <h4>分店資訊</h4>
+                        <div class="option_block"></div>
+                    </a>
+                </div>
+                <div class="option">
+                    <a href="">
+                        <h4>寶貴意見</h4>
+                        <div class="option_block"></div>
+                    </a>
+                </div>
+                <div class="option">
+                    <a href="">
+                        <h4>關於我們</h4>
+                        <div class="option_block"></div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+
+
+
+            <div class="my-slider">
+                <ul>
+                    <li>
+                        <div class="img img1"></div>
+                    </li>
+                    <li>
+                        <div class="img img2"></div>
+                    </li>
+                    <li>
+                        <div class="img img3"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="background_B"></div>
+    <div class="background_C"></div>
+    <div class="background_D"></div>
+    <div class="background_E"></div>
+    <div class="background_F"></div>
+
+
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/unslider-min.js"></script>
+
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.my-slider').unslider({
+                arrows: {
+                    //  Unslider default behaviour
+                    prev: '<a class="unslider-arrow prev"><i class="fa fa-angle-double-left fa-4x" aria-hidden="true"></i></a>',
+                    next: '<a class="unslider-arrow next"><i class="fa fa-angle-double-right fa-4x" aria-hidden="true"></i></a>',
+                }
+            });
+        });
+
+    </script>
+    <script>
+        function D() {
+            $(window).scrollTop(0);
+        }
+        $('.back_top').click(D);
+        function B() {
+            var s_value = $(window).scrollTop();
+            console.log($(window).scrollTop())
+            if (s_value > 500) {
+                $('.back_top').fadeIn();
+            } else {
+                $('.back_top').fadeOut();
+      
+            }
+        }
+        $(window).scroll(B);
+
+
+
+    </script>
+
+</body>
+
+</html>

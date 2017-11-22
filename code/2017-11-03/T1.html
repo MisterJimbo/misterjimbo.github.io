@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            vertical-align: top;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .navbar {
+            background-color: #eee;
+            width: 100%;
+            height: 50px;
+        }
+
+        .logo {
+            height: 100%;
+            width: 100px;
+            background-color: aqua;
+            border: 1px black solid;
+            text-align: center;
+            line-height: 50px;
+            float: left;
+        }
+
+        .btn1 {
+            width: 80px;
+            height: 100%;
+            border: 1px solid black;
+            float: right;
+        }
+
+        .btn2 {
+            width: 80px;
+            height: 100%;
+            border: 1px solid black;
+            float: right;
+        }
+
+        .btn3 {
+            width: 80px;
+            height: 100%;
+            border: 1px solid black;
+            float: right;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .box_a {
+            width: 50%;
+            height: 400px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        .box_b {
+            width: 25%;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        .box_c {
+            width: 25%;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        .box_d {
+            width: 25%;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        .box_e {
+            width: 25%;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        @media screen and (max-width:1200px) {
+            .box_a {
+                width: 100%;
+            }
+            .box_b {
+                width: 50%;
+            }
+            .box_c {
+                width: 50%;
+            }
+            .box_d {
+                width: 50%;
+            }
+            .box_e {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:468px) {
+
+            .box_a {
+                width: 100%;
+            }
+            .box_b {
+                width: 100%;
+            }
+            .box_c {
+                width: 100%;
+            }
+            .box_d {
+                width: 100%;
+            }
+            .box_e {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">LOGO</div>
+        <div class="btn1"></div>
+        <div class="btn2"></div>
+        <div class="btn3"></div>
+    </div>
+    <div class="container">
+        <div class="box_a"></div>
+        <div class="box_b"></div>
+        <div class="box_c"></div>
+        <div class="box_d"></div>
+        <div class="box_e"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+*{
+    /* border:black 1px solid; */
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+body{
+    background-color:rgb(243, 241, 241); 
+    margin:0px;
+}
+.card{
+    position:absolute;
+    height:96vh;
+    width:90vw;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius: 20px;
+    background-color:rgb(236, 225, 225);
+    overflow:hidden;
+   
+    
+}
+.top{
+    /* position: absolute; */
+    width:100%;
+    height:40%;
+    background-image: url(/img/burger3.jpg);
+    float: left;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat; 
+    /* background-attachment: fixed; */
+    /* opacity:0.5; */
+    
+}
+.top:hover{
+    filter: brightness(50%);
+}
+.bottom{
+    position: relative;
+    width:100%;
+    height:60%;
+    float: left;
+    padding: 15px;
+    /* opacity:0.5;     */
+}
+.left{  
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+.right{
+    width:50%;
+    float: left;
+    padding: 10px;
+}
+.smallword{
+    font-size: 8px;
+    color: rgb(83, 81, 81);
+    margin:5px;
+}
+p{
+    line-height: 28px;
+}
+ul{
+   padding:0; 
+}
+ul li{
+    display:inline-block;
+    /* color:#eee; */
+    background-color:#904935;
+    border-radius: 6px;
+    padding: 10px 0px;
+}
+ul li:hover{
+    background-color:rgb(231, 226, 226);
+    
+    transition-duration: 0.4s;
+}
+ul li a{
+    color:rgb(245, 240, 240);
+    text-decoration: none;
+    padding: 10px ;
+    width:120px;
+    
+}
+ul li a:hover{
+    color:#904935;
+}
+.fly{
+    position:absolute;
+    left:0px;
+    bottom: 0px;
+
+}

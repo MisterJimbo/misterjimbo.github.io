@@ -1,0 +1,46 @@
+.block {
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+}
+
+.block h1, .block p {
+    padding: 15px;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.block:hover h1, .block:hover p {
+    opacity: 1;
+}
+
+.block p {
+    transition-delay: 0.5s;
+}
+
+.cross {
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    position: relative;
+}
+
+.cross .line1, .cross .line2 {
+    width: 100px;
+    height: 10px;
+    border: solid 1px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-duration: 1s;
+}
+
+.cross:hover .line1 {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cross:hover .line2 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+

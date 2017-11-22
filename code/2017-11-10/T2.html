@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+    }
+
+
+    #hun {
+        position: relative;
+        width: 40px;
+        height: 50px;
+        padding: 10px;
+        background-color: rgb(128, 127, 126)
+    }
+
+    .lineA {
+        position: absolute;
+        background-color: black;
+        width: 80%;
+        height: 5px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .lineB {
+        position: absolute;
+        background-color: black;
+        width: 80%;
+        height: 5px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .lineC {
+        position: absolute;
+        background-color: black;
+        width: 80%;
+        height: 5px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    #menu a {
+        font-size: 30px;
+        text-decoration: none;
+        line-height: 45px;
+    }
+ 
+
+    .md {
+        display: none;
+    }
+</style>
+
+<body>
+
+    <div id="hun" onclick="md()">
+        <div class="lineA"></div>
+        <div class="lineB"></div>
+        <div class="lineC"></div>
+    </div>
+    <div id="menu" class="md">
+        <a href="">關於我們</a>
+        <br>
+        <a href="">各式套餐</a>
+        <br>
+        <a href="">活動資訊</a>
+        <br>
+        <a href="">分店資訊</a>
+        <br>
+        <a href="">聯絡我們</a>
+        <br>
+    </div>
+
+    <script>
+        function md() {
+            var a = document.querySelector("#menu");
+            a.classList.toggle('md');
+        }
+
+    </script>
+</body>
+
+</html>

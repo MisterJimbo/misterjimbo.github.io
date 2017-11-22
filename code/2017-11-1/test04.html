@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            max-width:850px;
+            margin:0 auto;
+        }
+        .wrap{
+            position:relative;
+        } 
+        .photo{
+            position:absolute;
+            width:170px;
+            height:170px;
+            background-color:#ccc;
+            border:1px solid white;
+            box-sizing:border-box;
+            left:15px;
+            bottom: 15px;
+            z-index: 2;
+        }
+        .top{
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background: #666;
+        }
+        .button1{
+            position: absolute;
+            right:15px;
+            bottom:15px;
+            font-size:13px;
+            background-color:#f6f7f9;
+            border-color:#ced0d4;
+            color:#4b4f56;
+            padding:5px;
+            text-decoration: none
+        }
+        .button2{
+            position:absolute;
+            right:116px;
+            bottom:15px;
+            font-size:13px;
+            background-color:#f6f7f9;
+            border-color:#ced0d4;
+            color:#4b4f56;
+            padding:4px;
+            text-decoration: none;
+        }
+        .bottom{
+            width:100%;
+            height:50px;
+            background-color:rgb(255, 255, 255);
+            padding-left:200px;
+            box-sizing:border-box;
+        }
+        .dp > li{
+            display:inline-block;
+            list-style: none;
+            margin: 0 10px;
+        }
+        .dp > li > a{
+            color:#1114bb;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrap">
+            <div class="photo"></div>
+            
+            <div class="top">
+                    <a href="" class="button1">查看活動資料</a>
+                    <a href="" class="button2">更新資料</a>
+            </div>
+
+            <div class="bottom">
+                <ul class="dp">
+                    <li><a href="">動態時報</a></li>
+                    <li><a href="">123123關於</a></li>
+                    <li><a href="">朋友</a></li>
+                    <li><a href="">相片</a></li>
+                    <li><a href="">更多</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

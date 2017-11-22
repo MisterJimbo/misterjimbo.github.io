@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .cross {
+            border: 1px solid #455;
+            width: 60px;
+            height: 40px;
+            position: relative;
+            float: right;
+        }
+
+        .cross .line1, .cross .line2 , .cross .line3 {
+            width: 50%;
+            border: solid 2px black;
+            border-radius:2px; 
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition-duration: 1s;
+        }
+
+        .line1{
+            top: 30%;
+        }
+
+        .line2{
+            top: 50%;
+        }
+
+        .line3{
+            top:70%;
+        }
+
+        .menu{
+            text-align: center;
+            background-color: #ccc;
+            margin-top: 5px;
+            padding: 0 5px;
+
+            transition: all 1s ease-out;
+            opacity: 0; 
+            height: 0;
+            overflow: hidden;
+        }
+
+        .menu_item{
+            padding: 5px 0;
+            border-bottom: 1px solid #555;
+        }
+
+        .menu_item:last-child{
+            border-bottom:none;
+        }
+
+        .menu_item a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .menu.active{
+            opacity: 1;
+            height: 189px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div onclick="toggle_class()" class="cross">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    
+    <div style="clear:both"></div>
+
+    <div id="menu" class="menu">
+        <div class="menu_item">
+            <a href="">LINK1</a>
+        </div>
+        <div class="menu_item">
+            <a href="">LINK1</a>
+        </div>
+        <div class="menu_item">
+            <a href="">LINK1</a>
+        </div>
+        <div class="menu_item">
+            <a href="">LINK1</a>
+        </div>
+        <div class="menu_item">
+            <a href="">LINK1</a>
+        </div>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos incidunt impedit deserunt, porro, aperiam, provident explicabo dolorem veniam magni eaque consectetur id minima! Nisi molestias dolor reiciendis. Voluptatum aut fuga temporibus dolorem obcaecati sed assumenda possimus iure, facilis quisquam quos repellat. Saepe animi corrupti sint quae quod quas laborum, explicabo vel! Asperiores suscipit necessitatibus magni aperiam impedit. Laboriosam maiores qui ipsa quasi, error sapiente voluptate amet quisquam commodi fugit consectetur repellendus quis ad nobis sit quia animi. Expedita, deserunt ad asperiores earum cumque facere voluptas iste quaerat non voluptates, odio veritatis, tenetur hic quod assumenda quis sint quisquam! Officiis, molestiae perspiciatis. Quasi maiores eligendi quo in consequuntur minus optio ex esse et dolorum temporibus architecto beatae, recusandae nisi voluptatum sint libero molestias inventore illo cumque illum a. Quod, dolorem! Necessitatibus iste explicabo fuga rerum fugiat minus exercitationem repellendus labore alias, similique eveniet molestias tempora perferendis veritatis eum expedita reprehenderit recusandae quibusdam? Nulla ipsa eum, delectus doloribus necessitatibus fugit nostrum. Tempora dolore officiis explicabo soluta totam, fuga reprehenderit! Reprehenderit eius impedit quam adipisci quibusdam accusantium praesentium possimus fugit? Temporibus quo ex at ea maxime, amet exercitationem quasi. Impedit, voluptatibus fuga mollitia necessitatibus aspernatur debitis alias eius quos architecto ipsam voluptas dolorum, asperiores consectetur ullam! Odit cumque sequi dolor deleniti a in, cum, perferendis nihil natus veniam quia labore. Labore optio eveniet eos nemo nulla doloremque dolores placeat dolor consectetur tempore fuga, magnam deserunt expedita. Accusamus, repudiandae beatae sunt officia facilis cupiditate ex autem modi expedita eaque id mollitia tempore non aliquam aperiam ratione ducimus quasi, laborum, sed eveniet sit? Officia fuga minima saepe, tenetur architecto fugiat dignissimos omnis excepturi maiores dolores consequuntur voluptatibus quibusdam alias delectus consectetur quo in ex enim placeat veniam? Omnis quaerat animi consectetur, blanditiis iste illo corrupti consequuntur! Mollitia nobis temporibus, illum quia minima laboriosam cupiditate?
+    </p>
+    
+
+    <script>
+        function toggle_class() {
+            var text_a = document.querySelector('#menu');
+            text_a.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

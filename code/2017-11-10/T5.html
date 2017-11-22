@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table id="outside">
+        <tr>
+            <td id="t1">one</td>
+        </tr>
+        <tr>
+            <td id="t2">two</td>
+        </tr>
+    </table>
+
+    <script>
+        // 改變 t2 內容的函數
+            function modifyText(new_text) {
+                var t2 = document.getElementById("t2");
+                t2.firstChild.nodeValue = new_text;
+            }
+
+            // 為表格增加事件監聽的函數
+            var el = document.getElementById("outside");
+            el.addEventListener("click", function () { modifyText("four") }, false);
+    </script>
+</body>
+</html>

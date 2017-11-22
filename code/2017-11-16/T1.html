@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/unslider.css">
+    <link rel="stylesheet" href="/css/unslider-dots.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            /* border: 1px black solid; */
+        }
+
+        body {
+            /* margin: 0px; */
+            height: 2000px;
+            background-color: red;
+        }
+
+        .logo {
+            background-color: aqua;
+            height: 80px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            z-index: 99;
+        }
+
+        .option {
+            background:lightgreen;
+            flex: 1;
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+        }
+
+        .option a {
+            text-decoration: none;
+        }
+
+        .container {
+            margin: auto;
+            position: relative;
+
+        }
+
+        .img {
+            width: 100%;
+            height: calc(100vh - 140px);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img1 {
+
+            background-image: url(http://www.view-restaurant.co.uk/uploads/1/1/9/4/11949146/2826626.jpg?902)
+        }
+
+        .img2 {
+            background-image: url(https://www.50-best.com/images/black_and_white_wallpapers/black_white_lotus_car.jpg)
+        }
+
+        .img3 {
+            background-image: url(https://chryslercapital.files.wordpress.com/2015/05/052615-cc-orange-is-not-the-new-black-in-car-colors-2.jpg)
+        }
+
+        .back_top {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: none;
+            /* opacity:0; */
+        }
+
+        .unslider-arrow {
+            top: 50%;
+            color: rgb(181, 184, 187);
+        }
+
+        .navbar.position_s {
+            position: static;
+        }
+
+        .navbar.position_f {
+            position: fixed;
+            width: 100%;
+            top:0;
+        }
+        .unslider-nav{
+            position: absolute;
+            bottom: 0%;
+            left:50%;
+            margin: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back_top">Go Back to Top</div>
+    <div class="logo">
+        <h1>Logo</h1>
+    </div>
+   
+    <div class="navbar">
+        <div class="option">
+            <a href="">Link1</a>
+        </div>
+        <div class="option">
+            <a href="">Link2</a>
+        </div>
+        <div class="option">
+            <a href="">Link3</a>
+        </div>
+        <div class="option">
+            <a href="">Link4</a>
+        </div>
+        <div class="option">
+            <a href="">Link5</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="my-slider">
+            <ul>
+                <li>
+                    <div class="img img1"></div>
+                </li>
+                <li>
+                    <div class="img img2"></div>
+                </li>
+                <li>
+                    <div class="img img3"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/unslider-min.js"></script>
+
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.my-slider').unslider({
+                arrows: {
+                    //  Unslider default behaviour
+                    prev: '<a class="unslider-arrow prev"><i class="fa fa-angle-double-left fa-4x" aria-hidden="true"></i></a>',
+                    next: '<a class="unslider-arrow next"><i class="fa fa-angle-double-right fa-4x" aria-hidden="true"></i></a>',
+                }
+            });
+        });
+
+    </script>
+    <script>
+        function D() {
+            $(window).scrollTop(0);
+        }
+        $('.back_top').click(D);
+        function B() {
+            var s_value = $(window).scrollTop();
+            console.log($(window).scrollTop())
+            if (s_value > 500) {
+                $('.back_top').fadeIn();
+            } else {
+                $('.back_top').fadeOut();
+
+                if (s_value > 80) {
+                    $('.navbar').addClass('position_f');
+                    $('.navbar').removeClass('position_s');
+                } else {
+                    $('.navbar').addClass('position_s');
+                    $('.navbar').removeClass('position_f');
+                }
+
+            }
+        }
+        $(window).scroll(B);
+
+ 
+
+    </script>
+
+</body>
+
+</html>

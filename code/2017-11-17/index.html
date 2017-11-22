@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(39, 199, 124);
+        }
+
+        .active {
+            font-size: 20px;
+            color: aqua;
+        }
+
+        .back_top {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: none;
+            /* opacity:0; */
+        }
+
+        .back_top.show {
+            display: block;
+        }
+
+        .back_top.hide {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p id="test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae sequi cum consectetur totam? Ab, quisquam eum
+        ea reiciendis placeat temporibus est facere, illum architecto labore aut magni eveniet quia.</p>
+
+
+
+    <div class="back_top">
+        <a href="">
+            <h1>Go Back to Top</h1>
+        </a>
+    </div>
+
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script>
+        var a1 = document.querySelector('#test');
+        var a = jQuery('#test');
+        var back_button = $('.back_top');
+
+
+        function A() {
+            a.toggleClass("active");
+        }
+        a.click(A);
+
+        function B() {
+            console.log($(window).scrollTop())
+        }
+        // $(window).scroll(B);
+
+        function C() {
+            var scroll_value = $(window).scrollTop();
+            console.log($(window).scrollTop())
+            if (scroll_value > 500) {
+                back_button.addClass('show');
+                back_button.removeClass('hide');
+                console.log('大於500');
+            } else {
+                back_button.addClass('hide');
+                back_button.removeClass('show');
+                console.log('小於500');
+            }
+        }
+        // $(window).scroll(C);
+
+        function D() {
+            $(window).scrollTop(0);
+        }
+        back_button.click(D);
+
+        function E() {
+            var scroll_value = $(window).scrollTop();
+            console.log($(window).scrollTop())
+            if (scroll_value > 500) {
+                back_button.fadeIn();
+            } else {
+                back_button.fadeOut();
+            }
+        }
+        jQuery(window).scroll(E);
+
+
+
+    </script>
+</body>
+
+</html>

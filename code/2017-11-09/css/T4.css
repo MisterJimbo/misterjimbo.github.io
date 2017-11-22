@@ -1,0 +1,50 @@
+.box{
+    position:relative;
+    width:600px;
+    height:50px;
+    border:1px black solid;
+    overflow: hidden;
+    line-height: 25px;
+    
+}
+a{
+    width:600px;
+    height:100px;
+    border:1px black solid;
+}
+.b{
+    position:absolute;
+    width:600px;
+    height:50px;
+    /* border:1px black solid; */
+    bottom:0%;
+}
+.b:hover{
+    animation: down2 5s infinite;
+}
+
+
+@keyframes down{
+    0%{bottom:0%;}
+    20%{bottom:100%;}
+    40%{bottom:200%;}
+    60%{bottom:300%;}
+    80%{bottom:400%;}
+    100%{bottom:500%;}
+}
+@keyframes down1{
+    0%{bottom:0%;}
+    20%{bottom:50px;}
+    40%{bottom:100px;}
+    60%{bottom:150px;}
+    80%{bottom:200px;}
+    100%{bottom:250px;}
+}
+@keyframes down2{
+    0%{transform:translate(0%, -100%)}
+    20%{transform:translate(0%,-200%)}
+    40%{transform:translate(0%,-300%)}
+    60%{transform:translate(0%,-400%)}
+    80%{transform:translate(0%,-500%)}
+    100%{transform:translate(0%,-600%)}
+}

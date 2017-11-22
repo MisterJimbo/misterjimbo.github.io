@@ -1,0 +1,43 @@
+.box{
+    position:relative;
+    width:600px;
+    height:600px;
+    border:1px black solid;
+}
+
+.btn{
+    position:absolute;
+    width:200px;
+    height:200px;
+    border:1px black solid;
+    top:50%;
+    left:50%;
+    margin-top:-100px;
+    margin-left:-100px;
+    border-radius: 50%;
+    background-color:lightseagreen;
+    box-shadow: 0 0 0 0 rgba(90, 210, 90, 1);
+
+}
+.btn h1{
+    text-align:center;
+    line-height:500%;
+}
+.btn:hover{
+    animation:sh 3s 1;
+    background-color:blue;
+}
+
+@keyframes sh{
+    0% {
+    transform:  scale(0.9);
+  }
+  70% {
+    transform:  scale(1.1);
+    box-shadow: 0 0 0 100px rgba(90, 210, 90, 0.4);
+  }
+  100% {
+    transform:  scale(1);
+    box-shadow: 0 0 0 200px rgba(90, 210, 90, 0);
+  }
+}

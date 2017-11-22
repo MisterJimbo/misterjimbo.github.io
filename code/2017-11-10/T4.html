@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        /* 漢堡 */
+
+        .cross {
+            position: relative;
+            width: 40px;
+            height: 50px;
+            float: left;
+            border: 1px solid #455;
+        }
+
+        .cross .lineA,
+        .cross .lineB,
+        .cross .lineC {
+            width: 50%;
+            border: solid black 2px;
+            border-radius: 2px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .lineA {
+            top: 30%;
+        }
+
+        .lineB {
+            top: 50%;
+        }
+
+        .lineC {
+            top: 70%;
+        }
+
+        .menu a {
+            font-size: 30px;
+            text-decoration: none;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .menu {
+            position: fixed;
+            transform: translateX(-280px);
+            transition: 1s all;
+            background-color: aquamarine;
+            text-align: center;
+            padding: 80px;
+            height: 100vh;
+
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        body.active .menu {
+            transform: translateX(0);
+        }
+
+        .container {
+            transition: 1s all;
+        }
+
+        body.active .container {
+            transform: translateX(280px);
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="menu" class="menu">
+        <div class="box">
+            <a href="">關於我們</a>
+        </div>
+        <div class="box">
+            <a href="">各式套餐</a>
+        </div>
+        <div class="box">
+            <a href="">活動資訊</a>
+        </div>
+        <div class="box">
+            <a href="">分店資訊</a>
+        </div>
+        <div class="box">
+            <a href="">聯絡我們</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <nav>
+
+            <div onclick="toggle_a()" class="cross">
+                <div class="lineA"></div>
+                <div class="lineB"></div>
+                <div class="lineC"></div>
+            </div>
+            <div style="clear:both"></div>
+
+        </nav>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorem ratione facere dolorum delectus natus
+            eveniet doloremque quo provident dolore nesciunt et odio, sunt sint ut voluptatibus laudantium! Totam, repellendus.</p>
+    </div>
+
+    <script>
+
+        function toggle_a() {
+            var a = document.querySelector("body");
+            a.classList.toggle('active');
+            console.log(a.classList);
+        }
+
+    </script>
+</body>
+
+</html>
