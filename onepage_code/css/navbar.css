@@ -1,5 +1,5 @@
 .logo {
-    flex: 1.5;
+    flex: calc(1.5)  ;
     /* background-color: aqua; */
     /* height: 80px; */
     width: 100%;
