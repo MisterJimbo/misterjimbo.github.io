@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/aos.css">
+    <style>
+        body {
+            height: 2500px;
+        }
+
+        .blue4 {
+            position: absolute;
+            top: 1800px;
+            left:200px;
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .blue1 {
+            position: absolute;
+            top: 1500px;
+            left:200px;
+            width: 200px;
+            height: 100px;
+            background-color: rgb(26, 204, 204);
+        }
+
+        .blue2 {
+            position: absolute;
+            top: 1600px;
+            left:200px;
+            width: 200px;
+            height: 100px;
+            background-color: rgb(143, 233, 233);
+        }
+
+        .blue3 {
+            position: absolute;
+            top: 1700px;
+            left:200px;
+            width: 200px;
+            height: 100px;
+            background-color: rgb(86, 122, 122);
+        }
+
+        body[data-aos-duration='4000'] [data-aos],
+        [data-aos][data-aos][data-aos-duration='4000'] {
+            transition-duration: 4000ms;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div data-aos="fade-right" class="blue1">
+    </div>
+    <div data-aos="flip-left" class="blue2">
+    </div>
+    <div data-aos="slide-right" class="blue3">
+    </div>
+    <div data-aos="zoom-out" class="blue4">
+    </div>
+    <!-- <div data-aos="fade-up" class="blue">
+    </div>
+    <div data-aos="fade-up" class="blue">
+    </div>
+    <div data-aos="fade-up" class="blue">
+    </div>
+    <div data-aos="fade-up" class="blue"> -->
+    </div>
+    <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+    </div>
+    <div data-aos="flip-left" data-aos-delay="100" data-aos-anchor=".example-selector">
+    </div>
+
+    <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+    </div>
+
+
+
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
+
+    </script>
+</body>
+
+</html>

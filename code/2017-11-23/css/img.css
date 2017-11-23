@@ -1,0 +1,57 @@
+.img_menu{
+    height:20vh;
+    /* width:28vw; */
+    background-size: cover;
+    background-position: center;
+    margin-top:10px;
+    
+}
+
+.img_menu.img1 {
+    background-image: url(../img/1s.jpg);
+}
+
+.img_menu.img2 {
+    background-image: url(../img/2s.jpg)
+}
+
+.img_menu.img3 {
+    background-image: url(../img/3s.jpg)
+}
+
+.img_menu.img4 {
+    
+    background-image: url(../img/4s.jpg);
+}
+
+.img_menu.img5 {
+    background-image: url(../img/5s.jpg)
+}
+
+.img_menu.img6 {
+    background-image: url(../img/6s.jpg)
+}
+.img_menu.img7 {
+    
+    background-image: url(../img/7s.jpg);
+}
+
+.img_menu.img8 {
+    background-image: url(../img/8s.jpg)
+}
+
+.img_menu.img9 {
+    background-image: url(../img/9s.jpg)
+}
+.img_menu.img10 {
+    
+    background-image: url(../img/10s.jpg);
+}
+
+.img_menu.img11 {
+    background-image: url(../img/11s.jpg)
+}
+
+.img_menu.img12 {
+    background-image: url(../img/12s.jpg)
+}
