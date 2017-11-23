@@ -18,6 +18,7 @@
 }
 
 .background_C {
+    position:relative;
     background-size:cover;
     height: 100vh;
     width: 100vw;

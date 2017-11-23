@@ -9,61 +9,182 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css.css">
     <style>
         * {
-
             border: 1px solid black;
         }
 
         body {
-            display: flex;
             box-sizing: border-box;
-            height:1080px;
+            height: 1080px;
         }
 
-        .content {
+
+        .box {
+            flex: 1;
             display: flex;
-            height:100%;
+            flex-direction: column;
         }
 
-        .container {
+        .item {
+            flex: 1;
+            margin: 20px;
+        }
+
+        .wrap_f {
+            flex-wrap: wrap;
+        }
+
+        .content_a {
+            display: flex;
+            height: 100%;
+        }
+
+        .container_a {
             width: 80%;
-            height: 80%;
+            height: 40%;
             margin: auto;
         }
 
-        .c {
-            background-color: aqua;
+        .card_a {
+            float: left;
+            width: 60px;
+            height: 60px;
         }
-        .d-flex{
-            width:50%;
-            height:100%;
+
+        .card_t {
+            float: left;
         }
-        .p-2{
-            height:25%;
+
+        .clear {
+            clear: both;
+        }
+
+        .card_t1 {
+            margin: 5px;
+            font-size: 20px;
+            display: inline;
+        }
+
+        .card_t2 {
+            margin-left: 50px;
+            font-size: 20px;
+            display: inline;
+        }
+
+        .card_t3 {
+            margin: 5px;
+            font-size: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="content ">
 
-            <div class="d-flex  ">
-                <div class="p-2 c">Flex item 1</div>
-                <div class="p-2 c">Flex item 2</div>
-                <div class="p-2 c">Flex item 3</div>
-                <div class="p-2 c">Flex item 3</div>
-            </div>
-            <div class="d-flex ">
-                <div class="p-2 c">Flex item 1</div>
-                <div class="p-2 c">Flex item 2</div>
-                <div class="p-2 c">Flex item 3</div>
-                <div class="p-2 c">Flex item 3</div>
-            </div>
-        
+    <div class="container_a">
+        <div class="content_a ">
+            <div class="box">
+                <div class="item">
+                    <div class="card">
 
+                        <div class="card_a"></div>
+                        <div class="card_t">
+                            <div class="card_t1">益民店</div>
+                            <div class="card_t2">04-23114676</div>
+                            <div class="card_t3">台中市東區益民路2段21號</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+
+                        <div class="card_a"></div>
+                        <div class="card_t">
+                            <div class="card_t1">忠孝店</div>
+                            <div class="card_t2">04-23924364</div>
+                            <div class="card_t3">台中市中正路忠孝路一段168號</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+
+                        <div class="card_a"></div>
+                        <div class="card_t">
+                            <div class="card_t1">文心店</div>
+                            <div class="card_t2">04-23952298</div>
+                            <div class="card_t3">台中市西屯區文心路三段33號</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+
+                        <div class="card_a"></div>
+                        <div class="card_t">
+                            <div class="card_t1">大明店</div>
+                            <div class="card_t2">04-22987140</div>
+                            <div class="card_t3">台中市西區大明路29號</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="item">
+                    <div class="card">
+
+                        <div class="card_a"></div>
+                        <div class="card_t">
+                            <div class="card_t1">旱溪店</div>
+                            <div class="card_t2">04-23825729</div>
+                            <div class="card_t3">台中市東區旱溪東路426號</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+
+                        <div class="card_a"></div>
+                        <div class="card_t">
+                            <div class="card_t1">台中車站店</div>
+                            <div class="card_t2">04-23142342</div>
+                            <div class="card_t3">台中市中區五權西路 313號</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+
+                        <div class="card_a"></div>
+                        <div class="card_t">
+                            <div class="card_t1"> 漢口店</div>
+                            <div class="card_t2">04-23917866</div>
+                            <div class="card_t3">台中市西區漢口路99號</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+
+                        <div class="card_a"></div>
+                        <div class="card_t">
+                            <div class="card_t1">逢甲店</div>
+                            <div class="card_t2">04-28469915</div>
+                            <div class="card_t3">台中市西屯區甘肅路7號</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+   
 
     <script src="./js/jquery-3.2.1.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
