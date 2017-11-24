@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/img.css">
     <link rel="stylesheet" href="./css/T3.css">
     <link rel="stylesheet" href="./css/swiper.css">
-    
+
     <style>
         * {
             box-sizing: border-box;
@@ -68,14 +68,91 @@
             right: 20px;
             bottom: 20px;
             display: none;
-            color: whitesmoke;
+            color: rgb(236, 234, 234);
+            z-index: 99;
+            text-shadow: 2px 2px 0px #000000;
+        }
 
+        .message_t {
+            background-color: black;
+            opacity: 0.9;
+            padding: 40px;
+        }
+
+        .message_th h2 {
+            text-align: center;
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .message_tf {
+            text-align: start;
+            color: white;
+            font-size: 20px;
+        }
+
+        .precious {
+
+            opacity: 0.9;
+            height: 60vh;
+            display: flex;
+        }
+
+        .precious .card {
+            background-color: lightblue;
+            flex: 1;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .precious .card .item {
+            flex: 1;
+            margin: auto;
+            /* font-size: 20px; */
+        }
+
+        .precious .card .item.s2 {
+            flex: 1.5;
+        }
+
+        precious .card .item.s2 h1 {
+            text-align: center;
+        }
+
+        .precious .card .item.s4 {
+            flex: 4;
+        }
+
+        .about {
+            background-color: black;
+            border: white solid 3px;
+            padding: 20px;
+            /* padding-top: 0px; */
+            opacity: 0.85;
+        }
+
+        .about .header h2 {
+            text-align: center;
+            color: white;
+            padding:10px;
+        }
+
+        .about .footer {
+            padding:10px;
+            text-align: center;
+            color: white;
         }
     </style>
 </head>
 
 <body>
-    <div class="back_top">Go Back to Top</div>
+    <a href="">
+        <div class="back_top">Go Back to Top</div>
+    </a>
+
 
     <div class="background_A">
 
@@ -312,10 +389,115 @@
 
 
     <div class="background_D">
+        <div class="container">
+            <div class="message_t">
+                <div class="message_th">
+                    <h2>活動訊息</h1>
+                </div>
+                <div class="message_tf">我會選擇救環境，是因為相較於其他議題，環境的保護需要很長時間投入，一點一點慢慢累積，短期之內無法看到太大的成效，也因此常常被許多人忽視。但對於生活在這片土地上的我們而言，它卻是如此重要。」晴心一個字一個字慢慢地說著，輕柔的語調中揉雜了無比的堅定。
+                </div>
+            </div>
+        </div>
 
     </div>
-    <div class="background_E"></div>
-    <div class="background_F"></div>
+
+
+    <div class="background_E">
+        <div class="container">
+            <div class="precious">
+                <div class="card">
+                    <div class="item s2">
+                        <h1>寶貴意見</h1>
+                    </div>
+                    <div class="item">
+                        姓 名 :
+                        <input type="text" placeholder="請輸入名子" value="">
+                    </div>
+                    <div class="item">
+                        電 話 :
+                        <input type="text" placeholder="請輸入電話" value="">
+                    </div>
+                    <div class="item s4">
+                        <div> 訊 息 內 容 :</div>
+                        <textarea name="" id="" cols="35" rows="5"></textarea>
+                    </div>
+                    <div class="item">
+                        <button>送出</button>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="item">
+                        <h1>用餐訂位</h1>
+                    </div>
+                    <div class="item">
+                        姓 名 :
+                        <input type="text" placeholder="請輸入名子" value="">
+                    </div>
+                    <div class="item">
+                        電 話 :
+                        <input type="text" placeholder="請輸入電話" value="">
+                    </div>
+                    <div class="item">
+                        人數 :
+                        <input type="number" placeholder="請問是幾位">
+                    </div>
+                    <div class="item">
+                        時間 :
+                        <input type="time" name="" id="">
+                    </div>
+                    <div class="item">
+                        <button>送出</button>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="item ">
+                        <h1>加入我們</h1>
+                    </div>
+                    <div class="item">
+                        姓 名 :
+                        <input type="text" placeholder="請輸入名子" value="">
+                    </div>
+                    <div class="item">
+                        電 話 :
+                        <input type="text" placeholder="請輸入電話" value="">
+                    </div>
+                    <div class="item">
+                        <input type="radio" name="" id=""> 特約加盟
+                        <br>
+
+                    </div>
+                    <div class="item">
+                        <input type="radio" name="" id=""> 委託加盟</div>
+                    <div class="item">
+                        <button>送出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="background_F">
+        <div class="container">
+            <div class="about">
+                <div class="header">
+                    <h2>關於我們</h2>
+                </div>
+                <div class="footer">
+                    1927年創立於美國德州達拉斯的7-ELEVEN，初名為南方公司(The Southland Corporation)，主要業務是零售冰品、牛奶、雞蛋。到了1946年，推出了當時便利服務的「創舉」，將營業時間延長為早上7點到晚上11點，自此，「7-ELEVEN」傳奇性的名字於是誕生。
+                    1978年統一企業集資成立統一超商，將整齊、開闊、明亮的7-ELEVEN引進台灣，掀起台灣零售通路的革命。走過艱辛的草創初期，統一超商堅持了7年終於轉虧為盈，在積極展店和創新行銷下一直穩居台灣零售業龍頭領導地位。
+                    2000年4月20日在全國媒體的見證下，7-ELEVEN 總裁Mr. Jim Keyes也正式和創辦人高清愿先生簽訂永久的授權契約，這項在國際間不尋常的簽約儀式，代表了美國7-ELEVEN對統一超商完全的信賴，更認同統一超商的經營實力，也對7-
+                    ELEVEN在台灣的永續經營多了一份保障。
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/jquery-3.2.1.min.js"></script>
