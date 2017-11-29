@@ -95,16 +95,22 @@
 
             opacity: 0.9;
             height: 60vh;
-            display: flex; flex-wrap: wrap;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .precious .card {
-            background-color: lightblue;
+            /* background-color: lightblue; */
+            color: white;
+            text-shadow: 1px 1px 0 black;
+            border: 2px rgb(187, 189, 183) solid;
+            background-color: black;
+            opacity: 0.9;
             flex: 1;
             margin: 10px;
             display: flex;
             flex-direction: column;
-           
+
             margin: 5px;
             padding: 10px;
         }
@@ -138,13 +144,71 @@
         .about .header h2 {
             text-align: center;
             color: white;
-            padding:10px;
+            padding: 10px;
         }
 
         .about .footer {
-            padding:10px;
+            padding: 10px;
             text-align: center;
             color: white;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 530px) {
+            #background_A {
+                min-height: 100vh;
+            }
+            #background_E {
+                /* height: auto; */
+            }
+            #background_B {
+                /* height: auto; */
+            }
+            #background_C {
+                height: 250vh;
+            }
+            #background_D {
+                height: 160vh;
+            }
+            #background_F {
+                height: 220vh;
+            }
+            .content_a {
+                /* color: yellow */
+            }
+            .card_t .card_t1 {
+                /* color:aqua */
+                font-size: 1rem;
+            }
+            .card_t .card_t2 {
+                /* color:aqua */
+                font-size: 1rem;
+            }
+            .card_t .card_t3 {
+                /* color:aqua */
+                font-size: 1rem;
+            }
+            .navbar {
+                flex-direction: column;
+            }
+            .logo h1 {
+                /* opacity: 0; */
+            }
+            .option {
+                /* display: none; */
+                transform: translate(-134%);
+                transition: 1s all;
+                /* transform: translate(0); */
+            }
+            .navbar.active-1 .option {
+                transform: translate(0);
+            }
+            .barger {
+                display: block;
+            }
         }
     </style>
 </head>
@@ -154,50 +218,62 @@
         <div class="back_top">Go Back to Top</div>
     </a>
 
+    <div class="navbar_out">
+        <div class="barger">
 
-    <div class="background_A">
 
-        <div class="navbar_out">
-            <div class="navbar">
-                <div class="logo">
-                    <h1>Logo</h1>
-                </div>
-
-                <div class="option">
-                    <a href="">
-                        <h4>各式套餐</h4>
-                        <div class="option_block"></div>
-                    </a>
-                </div>
-                <div class="option">
-                    <a href="">
-                        <h4>分店資訊</h4>
-                        <div class="option_block"></div>
-                    </a>
-                </div>
-
-                <div class="option">
-                    <a href="">
-                        <h4>活動訊息</h4>
-                        <div class="option_block"></div>
-                    </a>
-                </div>
-
-                <div class="option">
-                    <a href="">
-                        <h4>寶貴意見</h4>
-                        <div class="option_block"></div>
-                    </a>
-                </div>
-                <div class="option">
-                    <a href="">
-                        <h4>關於我們</h4>
-                        <div class="option_block"></div>
-                    </a>
-                </div>
-
+            <div class="br" onclick="toggle_a()">
+                <div class="bb1"></div>
+                <div class="bb2"></div>
+                <div class="bb3"></div>
             </div>
+
         </div>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#background_A">
+                    <h1>Logo</h1>
+                </a>
+            </div>
+
+            <div class="option">
+                <a href="#background_B"onclick="toggle_a()">
+                    <h4>各式套餐</h4>
+                    <div class="option_block"></div>
+                </a>
+            </div>
+            <div class="option">
+                <a href="#background_C"onclick="toggle_a()">
+                    <h4>分店資訊</h4>
+                    <div class="option_block"></div>
+                </a>
+            </div>
+
+            <div class="option">
+                <a href="#background_D"onclick="toggle_a()">
+                    <h4>活動訊息</h4>
+                    <div class="option_block"></div>
+                </a>
+            </div>
+
+            <div class="option">
+                <a href="#background_E"onclick="toggle_a()">
+                    <h4>寶貴意見</h4>
+                    <div class="option_block"></div>
+                </a>
+            </div>
+            <div class="option">
+                <a href="#background_F"onclick="toggle_a()">
+                    <h4>關於我們</h4>
+                    <div class="option_block"></div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="background_A">
+
 
         <div class="container">
 
@@ -222,10 +298,64 @@
 
 
 
-    <div class="background_B">
+    <div id="background_B">
         <div class="container_menu">
             <div class="owl-carousel owl-theme">
 
+                <div class="item">
+                    <a href="">
+                        <div class="img_menu img1"></div>
+                        <p>板烤米香堡</p>
+                    </a>
+                    <a href="">
+                        <div class="img_menu img2"></div>
+                        <p>卡拉雞腿堡</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="img_menu img1"></div>
+                        <p>板烤米香堡</p>
+                    </a>
+                    <a href="">
+                        <div class="img_menu img2"></div>
+                        <p>卡拉雞腿堡</p>
+                    </a>
+                </div>
+
+
+                <div class="item">
+                    <a href="">
+                        <div class="img_menu img3"></div>
+                        <p>鮮蝦豬肉堡</p>
+                    </a>
+                    <a href="">
+                        <div class="img_menu img4"></div>
+                        <p>豬肉滿福堡</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="">
+                        <div class="img_menu img5"></div>
+                        <p>雙層起司堡</p>
+                    </a>
+                    <a href="">
+                        <div class="img_menu img6"></div>
+                        <p>黑胡椒鹽堡</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="">
+                        <div class="img_menu img7"></div>
+                        <p>美味吃到飽</p>
+                    </a>
+                    <a href="">
+                        <div class="img_menu img8"></div>
+                        <p>火腿起司堡</p>
+                    </a>
+                </div>
                 <div class="item">
                     <a href="">
                         <div class="img_menu img1"></div>
@@ -276,7 +406,7 @@
 
 
 
-    <div class="background_C">
+    <div id="background_C">
 
         <div class="container_a">
             <div class="header_a">
@@ -389,7 +519,7 @@
     </div>
 
 
-    <div class="background_D">
+    <div id="background_D">
         <div class="container">
             <div class="message_t">
                 <div class="message_th">
@@ -403,7 +533,7 @@
     </div>
 
 
-    <div class="background_E">
+    <div id="background_E">
         <div class="container">
             <div class="precious">
                 <div class="card">
@@ -483,7 +613,7 @@
     </div>
 
 
-    <div class="background_F">
+    <div id="background_F">
         <div class="container">
             <div class="about">
                 <div class="header">
@@ -556,7 +686,13 @@
             }
         })
     </script>
-
+    <script>
+        function toggle_a() {
+            var a = document.querySelector(".navbar");
+            a.classList.toggle('active-1');
+            console.log(a.classList);
+        }
+    </script>
 </body>
 
 </html>

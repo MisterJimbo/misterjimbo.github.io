@@ -1,55 +1,55 @@
-.background_A {
-    background-size:cover;
-    height: 100vh;
+#background_A {
+    background-size: cover;
+    height: 150vh;
     width: 100vw;
-    
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-image: url(../img/A.jpg);
+    background-attachment: fixed;
 }
 
-.background_B {
+#background_B {
     position: relative;
-    background-size:cover;
-    height: 100vh;
+    background-size: cover;
+    height: 150vh;
     width: 100vw;
-
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-image: url(../img/B.jpg);
+    background-attachment: fixed;
 }
 
-.background_C {
-    position:relative;
-    background-size:cover;
-    height: 100vh;
+#background_C {
+    position: relative;
+    background-size: cover;
+    height: 150vh;
     width: 100vw;
-    
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-image: url(../img/C.jpg);
+    background-attachment: fixed;
 }
 
-.background_D {
-    background-size:cover;
-    height: 100vh;
+#background_D {
+    background-size: cover;
+    height: 150vh;
     width: 100vw;
-    
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-image: url(../img/D.jpg);
+    background-attachment: fixed;
 }
 
-.background_E {
-    background-size:cover;
-    height: 100vh;
+#background_E {
+    background-size: cover;
+    height: 150vh;
     width: 100vw;
-
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-image: url(../img/E.jpg);
+    background-attachment: fixed;
 }
 
-.background_F {
-    background-size:cover;
-    height: 100vh;
+#background_F {
+    background-size: cover;
+    height: 150vh;
     width: 100vw;
-
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-image: url(../img/F.jpg);
+    background-attachment: fixed;
 }

@@ -15,15 +15,15 @@
 }
 .box1{
     left:15%;
-    /* animation :a1 1.3s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+    animation :a1 1.3s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .box2{
     left:30%;
-    /* animation:a2 1.3s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55)          ; */
+    animation:a2 1.3s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55)          ;
 }
 .box3{
     left:45%;                  
-    /* animation:a3 1.5s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+    animation:a3 1.5s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .box4{
     left:60%;
